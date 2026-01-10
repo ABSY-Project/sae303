@@ -23,5 +23,83 @@
           </nav>
         </div>
       </header>
+      <main class="max-w-[1100px] mx-auto px-5 py-10">
+    <h1 class="pt-6 pb-4 font-semibold text-2xl">Sources</h1>
+
+    <p class="max-w-[750px] leading-relaxed mb-6">
+        Cette page présente les données et outils utilisés pour afficher les radars fixes en France sur la carte.
+    </p>
+
+    <div class="grid gap-5 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+
+        <section class="rounded-xl p-6 shadow-lg bg-[oklch(92.2%_0_0)] transition-all hover:shadow-xl">
+            <h2 class="text-lg font-semibold mb-2">Données utilisées:</h2>
+
+            <p class="leading-relaxed mb-3">
+                Les radars sont issus du jeu de données « Liste des radars fixes en France » publié sur data.gouv.
+                Le jeu de données recense l'emplacement des radars fixes, leur typologie ainsi que d'autres champs descriptifs.
+            </p>
+
+            <ul class="list-disc pl-5 space-y-1 mb-3">
+                <li>Source: data.gouv (ANTAI)</li>
+                <li>Type: radars fixes</li>
+                <li>Format utilisé: JSON / GeoJSON</li>
+                <li>Mise à jour: variable selon publication</li>
+            </ul>
+
+            <p>
+                Lien du dataset:
+                <a class="text-blue-600 hover:underline" target="_blank"
+                   href="https://www.data.gouv.fr/datasets/liste-des-radars-fixes-en-france">
+                    Liste des radars fixes en France
+                </a>
+            </p>
+        </section>
+
+        <section class="rounded-xl p-6 shadow-lg bg-[oklch(92.2%_0_0)] transition-all hover:shadow-xl">
+            <h2 class="text-lg font-semibold mb-2">Technologies utilisées:</h2>
+
+            <ul class="list-disc pl-5 space-y-1">
+                <li>Leaflet pour l'affichage cartographique</li>
+                <li>Fetch API pour la récupération des données</li>
+                <li>JavaScript pour le traitement</li>
+                <li>CSS pour la mise en forme</li>
+            </ul>
+        </section>
+
+        <section class="rounded-xl p-6 shadow-lg bg-[oklch(92.2%_0_0)] transition-all hover:shadow-xl">
+            <h2 class="text-lg font-semibold mb-2">Licences et crédits:</h2>
+
+            <p class="leading-relaxed mb-2">
+                Le dataset est mis à disposition sous <strong>Licence Ouverte Etalab 2.0</strong>.
+            </p>
+            <p class="leading-relaxed mb-2">
+                Leaflet est distribué sous <strong>BSD 2-Clause</strong>.
+            </p>
+            <p class="leading-relaxed">
+                Ce projet respecte les conditions d'utilisation des données ouvertes.
+            </p>
+        </section>
+    </div>
+
+    <section class="rounded-xl p-6 shadow-lg bg-[oklch(92.2%_0_0)] transition-all hover:shadow-xl mt-5">
+        <h2 class="text-lg font-semibold mb-2">Informations :</h2>
+
+        <p class="leading-relaxed mb-2">
+            <strong>Date de création</strong> : 18 octobre 2024.
+        </p>
+        <p class="leading-relaxed mb-2">
+            <strong>Dernière mise à jour</strong> : 30 décembre 2025.
+        </p>
+        <p class="leading-relaxed">
+            <strong>Licence</strong> :
+            <a class="text-blue-600 hover:underline" target="_blank"
+               href="https://alliance.numerique.gouv.fr/licence-ouverte-open-licence/">
+               Licence Ouverte Etalab 2.0
+            </a>
+        </p>
+    </section>
+</main>
+
 </body>
 </html>
