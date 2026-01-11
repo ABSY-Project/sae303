@@ -23,5 +23,133 @@
           </nav>
         </div>
       </header>
+      <main class="flex-grow">
+        <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white py-24 px-6 overflow-hidden">
+            <div class="container mx-auto relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Explorez les radars français<br>
+                    <span class="text-blue-300">en temps réel</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
+                    Notre application interactive transforme des fichiers de données brutes en une visualisation cartographique immersive. Comprenez les tendances, analysez les répartitions géographiques et interagissez avec l'information.
+                </p>
+                <a href="carte.html" class="inline-block bg-white text-blue-900 font-bold py-4 px-8 rounded-full shadow-lg hover:bg-blue-50 hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    Lancer la visualisation
+                </a>
+            </div>
+        </section>
+ 
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Fonctionnalités Clés</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">
+                        Ce projet universitaire met en œuvre les technologies web modernes pour offrir une expérience utilisateur fluide et accessible.
+                    </p>
+                </div>
+ 
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                            🗺️
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Cartographie Interactive</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Navigation dynamique via Leaflet. Les données sont géolocalisées avec précision, permettant une exploration visuelle du territoire et un filtrage par zone géographique.
+                        </p>
+                    </div>
+ 
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-emerald-100 rounded-lg flex items-center justify-center mb-6 text-emerald-600 text-2xl">
+                            📊
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Analyse de Données</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Traitement en direct des flux JSON via l'API Fetch.
+                        </p>
+                    </div>
+ 
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600 text-2xl">
+                            ♿
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Accessibilité Web</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            L'interface est conçue pour être inclusive, respectant les normes de contraste et de lisibilité pour garantir l'accès à l'information pour tous les utilisateurs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="py-16 bg-slate-50 border-t border-slate-200">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">À propos du jeu de données</h2>
+                    <p class="text-slate-700 text-lg mb-4">
+                        Les informations présentées dans cette application proviennent de sources officielles ouvertes.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-slate-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Source : OpenData Gouv
+                        </li>
+                        <li class="flex items-center text-slate-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Mise à jour : Annuelle
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform rotate-2 max-w-sm w-full border border-slate-100">
+                        <div class="h-40 bg-slate-200 rounded-lg mb-4 flex items-center justify-center text-slate-400">
+ 
+                        </div>
+                        <div class="h-4 bg-slate-100 rounded w-3/4 mb-2"></div>
+                        <div class="h-4 bg-slate-100 rounded w-1/2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+    <footer class="bg-slate-900 text-slate-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="text-white text-lg font-bold mb-4">Projet Universitaire</h4>
+                    <p class="text-sm leading-relaxed mb-4 max-w-md">
+                        Cette application a été réalisée dans le cadre du BUT MMI. Elle vise à démontrer la maîtrise de la manipulation des API externes et de la visualisation de données.
+                    </p>
+                    <div class="text-sm font-semibold text-blue-400">
+                        Année 2025 - 2026
+                    </div>
+                </div>
+ 
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">Membres du groupe</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Bassem MEGHICHE</li>
+                        <li>Abdelouahab KHENENOU</li>
+                        <li>Malo Le CAER</li>
+                        <li>Jun RAULT</li>
+                    </ul>
+                </div>
+ 
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-4">Sources & Crédits</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="sources.html" class="hover:text-white transition">Jeu de données original</a></li>
+                        <li><a href="https://leafletjs.com/reference.html" target="_blank" class="hover:text-white transition">Documentation Leaflet</a></li>
+                        <li><a href="https://fontawesome.com/" target="_blank" class="hover:text-white transition">Icônes par Fontawesome</a></li>
+                    </ul>
+                </div>
+            </div>
+ 
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 Promotion BUT2 MMI. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
