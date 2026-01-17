@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <title>RadarFR - Accueil</title>
 </head>
@@ -47,7 +48,6 @@
                         Ce projet universitaire met en œuvre les technologies web modernes pour offrir une expérience utilisateur fluide et accessible.
                     </p>
                 </div>
- 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
                         <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-blue-600 text-2xl">
@@ -77,6 +77,33 @@
                         <p class="text-slate-600 leading-relaxed">
                             L'interface est conçue pour être inclusive, respectant les normes de contraste et de lisibilité pour garantir l'accès à l'information pour tous les utilisateurs.
                         </p>
+                    </div>
+                </div>
+                
+                <div class="mx-auto mt-20">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Statistiques des radars</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                            <h3 class="text-lg font-bold mb-4 text-slate-900 text-center">Répartition par vitesse</h3>
+                            <div class="relative" style="height: 350px;">
+                                <canvas id="chartVitesse"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                            <h3 class="text-lg font-bold mb-4 text-slate-900 text-center">Top 10 des régions</h3>
+                            <div class="relative" style="height: 350px;">
+                                <canvas id="chartRegion"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                            <h3 class="text-lg font-bold mb-4 text-slate-900 text-center">Répartition par type</h3>
+                            <div class="relative" style="height: 350px;">
+                                <canvas id="chartType"></canvas>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,5 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
 </body>
 </html>
