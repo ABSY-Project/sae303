@@ -9,33 +9,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
     <title>RadarFR - Accueil</title>
 </head>
 <body>
-    <header class="top-0 w-full bg-white shadow ">
+    <header class="top-0 w-full bg-white shadow sticky z-50">
         <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-          <a href="index.html" class="text-xl font-bold tracking-tight">RadarFR</a>
-          <nav class="hidden md:flex space-x-4">
-            <a href="carte.html" class="text-sm hover:underline">Carte</a>
-            <a href="about.html" class="text-sm hover:underline">À propos</a>
-            <a href="sources.html" class="text-sm hover:underline">Sources</a>
+          <a href="index.html" class="text-xl font-bold tracking-tight text-slate-900">RadarFR</a>
+          <nav class="hidden md:flex space-x-6">
+            <a href="carte.html" class="text-sm font-medium text-slate-700 hover:text-blue-600 transition">Carte</a>
+            <a href="about.html" class="text-sm font-medium text-slate-700 hover:text-blue-600 transition">À propos</a>
+            <a href="sources.html" class="text-sm font-medium text-slate-700 hover:text-blue-600 transition">Sources</a>
           </nav>
+          <button id="menuToggle" class="md:hidden text-slate-700 hover:text-blue-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
+        <nav id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-200">
+          <div class="px-4 py-3 space-y-3">
+            <a href="carte.html" class="block text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded transition">Carte</a>
+            <a href="about.html" class="block text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded transition">À propos</a>
+            <a href="sources.html" class="block text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded transition">Sources</a>
+          </div>
+        </nav>
       </header>
       <main class="flex-grow">
-        <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white py-24 px-6 overflow-hidden">
+        <section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white py-32 px-6 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
+
             <div class="container mx-auto relative z-10 text-center">
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight animate-fade-in">
                     Explorez les radars français<br>
-                    <span class="text-blue-300">en temps réel</span>
+                    <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">en temps réel</span>
                 </h1>
-                <p class="text-lg md:text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
+                <p class="text-lg md:text-xl mb-10 text-slate-200 max-w-2xl mx-auto leading-relaxed">
                     Notre application interactive transforme des fichiers de données brutes en une visualisation cartographique immersive. Comprenez les tendances, analysez les répartitions géographiques et interagissez avec l'information.
                 </p>
-                <a href="carte.html" class="inline-block bg-white text-blue-900 font-bold py-4 px-8 rounded-full shadow-lg hover:bg-blue-50 hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                <a href="carte.html" class="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-8 rounded-full shadow-2xl hover:from-blue-600 hover:to-cyan-600 hover:shadow-cyan-500/50 transition-all transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-300">
                     Lancer la visualisation
+                    <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
                 </a>
             </div>
         </section>
@@ -129,11 +145,11 @@
                 </div>
                 <div class="md:w-1/2 flex justify-center">
                     <div class="bg-white p-6 rounded-xl shadow-lg transform rotate-2 max-w-sm w-full border border-slate-100">
-                        <div class="h-40 bg-slate-200 rounded-lg mb-4 flex items-center justify-center text-slate-400">
- 
+                        <div class="h-40 bg-slate-200 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                            <img src="/images/visualisation.png" alt="Visualisation" class="w-full h-full object-cover">
                         </div>
-                        <div class="h-4 bg-slate-100 rounded w-3/4 mb-2"></div>
-                        <div class="h-4 bg-slate-100 rounded w-1/2"></div>
+                        <div class="text-slate-700 font-semibold transform -rotate-1 mb-2">Données en temps réel</div>
+                        <div class="text-slate-600 text-sm transform rotate-1">Analyse interactive des radars</div>
                     </div>
                 </div>
             </div>
